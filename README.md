@@ -21,11 +21,9 @@
 - [📝 License](#license)
 
 
-# 📖 [Vet Clinic Database] <a name="about-project"></a>
+# 📖 Vet Clinic Database <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+**Vet Clinic Database** is a relational database focus project. User can use the project query to create, read, update and delete specific data form the database using sql terminal.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -38,9 +36,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Users can create database table using this project.]**
-- **[User can insert and update database table column.]**
-- **[User can get specific data with different sql query]**
+- **Users can create database table using this project.**
+- **User can insert and update database table column.**
+- **User can get specific data with different sql query**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,7 +73,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[I will add more query to add tables update and also delete inside the database.]**
+- [ ] **I will add more query to add tables update and also delete inside the database.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
