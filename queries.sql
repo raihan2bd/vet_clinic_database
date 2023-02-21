@@ -26,3 +26,18 @@ UPDATE animals
 SET species = 'pokemon'
 WHERE species IS NULL;
 COMMIT;
+
+BEGIN;
+DELETE FROM animals;
+ROLLBACK;
+
+BEGIN;
+DELETE FROM animals WHERE date_of_birth > '2022-01-01';
+SAVEPOINT here;
+UPDATE animals
+SET weight_kg = weight_kg * -1;
+ROLLBACK TO here;
+UPDATE animals
+SET weight_kg = weight_kg * -1 WHERE weight_kg < 0;
+COMMIT;
+SELECT * FROM animals;
