@@ -40,4 +40,15 @@ ROLLBACK TO here;
 UPDATE animals
 SET weight_kg = weight_kg * -1 WHERE weight_kg < 0;
 COMMIT;
-SELECT * FROM animals;
+
+/* Query to select animals table data with specific condition and also count them */
+
+SELECT COUNT(*) FROM animals;
+SELECT COUNT(*) FROM animals WHERE escape_attempts = 0;
+SELECT ROUND(AVG(weight_kg)::numeric, 2) FROM animals;
+SELECT name FROM animals 
+  WHERE escape_attempts = (SELECT MAX(escape_attempts) FROM animals);
+SELECT species, MIN(weight_kg), MAX(weight_kg) 
+  FROM animals GROUP BY species;
+SELECT species, ROUND(AVG(escape_attempts)::numeric, 0) FROM animals 
+  WHERE date_of_birth >= '1990-01-01' AND date_of_birth <= '2000-12-31' GROUP BY species;
