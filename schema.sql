@@ -10,4 +10,10 @@ CREATE TABLE animals (
 );
 
 ALTER TABLE animals
-ADD species VARCHAR(255);
+    ADD species VARCHAR(255);
+
+CREATE TABLE owner (
+    id bigserial PRIMARY KEY,
+    full_name VARCHAR(100),
+    age INT
+);
