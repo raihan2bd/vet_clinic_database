@@ -14,3 +14,11 @@ INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg) 
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg) VALUES ('Boarmon', '2005-06-07', 7, true, 20.4);
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg) VALUES ('Blossom', '1998-10-13', 3, true, 17);
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg) VALUES ('Ditto', '2022-05-14', 4, true, 22);
+
+/* Insert data into owners table */
+INSERT INTO owners (full_name, age)
+  values ('Sam Smith', 34),
+  ('Jennifer Orwell', 19),
+  ('Bob',45), ('Melody Pond', 77), 
+  ('Dean Winchester', 14), 
+  ('Joddie Whittaker', 38);
