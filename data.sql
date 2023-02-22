@@ -28,9 +28,21 @@ INSERT INTO species (name)
   VALUES ('Pokemon'),
   ('Digimon');
 
-/* Modify animals tables and incers species_id */
+/* Modify animals tables and insert species_id */
 UPDATE animals SET species_id = 2
   WHERE name LIKE '%mon';
 
 UPDATE animals SET species_id = 1
   WHERE species_id IS NULL;
+
+/* Modify animals table owner_id column by owner name */
+UPDATE animals SET owner_id = 1
+  WHERE name='Agumon';
+UPDATE animals SET owner_id = 2
+  WHERE name IN ('Gabumon', 'Pikachu');
+UPDATE animals SET owner_id = 3
+  WHERE name IN ('Devimon', 'Plantmon');
+UPDATE animals SET owner_id = 4
+  WHERE name IN ('Charmander', 'Squirtle', 'Blossom');
+UPDATE animals SET owner_id = 5
+  WHERE name IN ('Angemon', 'Boarmon');
