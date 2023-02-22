@@ -30,3 +30,7 @@ ALTER TABLE animals
 ALTER TABLE animals
     ADD owner_id INT;
 
+ALTER TABLE animals 
+    ADD foreign key (species_id) references species(id);
+ALTER TABLE animals 
+    ADD foreign key (owner_id) references owners(id);
