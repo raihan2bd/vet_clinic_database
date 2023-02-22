@@ -17,8 +17,13 @@ INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg) 
 
 /* Insert data into owners table */
 INSERT INTO owners (full_name, age)
-  values ('Sam Smith', 34),
+  VALUES ('Sam Smith', 34),
   ('Jennifer Orwell', 19),
   ('Bob',45), ('Melody Pond', 77), 
   ('Dean Winchester', 14), 
   ('Joddie Whittaker', 38);
+
+/* Insert data into species table */
+INSERT INTO species (name)
+  VALUES ('Pokemon'),
+  ('Digimon');
