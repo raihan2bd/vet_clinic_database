@@ -17,3 +17,9 @@ CREATE TABLE owner (
     full_name VARCHAR(100),
     age INT
 );
+
+CREATE TABLE species (
+    id bigserial PRIMARY KEY,
+    name VARCHAR(100)
+);
+
