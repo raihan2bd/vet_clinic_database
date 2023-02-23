@@ -35,9 +35,17 @@ ALTER TABLE animals
 ALTER TABLE animals 
     ADD foreign key (owner_id) references owners(id);
 
+-- create vets table to the database
 CREATE TABLE vets (
     id bigserial PRIMARY KEY,
     name VARCHAR(100),
     age INT,
     date_of_graduation DATE
+);
+
+-- create specializations join table to the database
+CREATE TABLE specializations (
+    id bigserial PRIMARY KEY,
+    species_id INT REFERENCES species(id),
+    vet_id INT REFERENCES vets(id)
 );
