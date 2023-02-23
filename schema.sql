@@ -34,3 +34,10 @@ ALTER TABLE animals
     ADD foreign key (species_id) references species(id);
 ALTER TABLE animals 
     ADD foreign key (owner_id) references owners(id);
+
+CREATE TABLE vets (
+    id bigserial PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+    date_of_graduation DATE
+);
