@@ -37,7 +37,7 @@ ALTER TABLE animals
 
 -- create vets table to the database
 CREATE TABLE vets (
-    id bigserial PRIMARY KEY,
+    id serial PRIMARY KEY,
     name VARCHAR(100),
     age INT,
     date_of_graduation DATE
@@ -45,14 +45,12 @@ CREATE TABLE vets (
 
 -- create specializations join table to the database
 CREATE TABLE specializations (
-    id bigserial PRIMARY KEY,
     species_id INT REFERENCES species(id),
     vet_id INT REFERENCES vets(id)
 );
 
 -- create visits table to join animals table and vets table
 CREATE TABLE visits (
-    id bigserial PRIMARY KEY,
     animal_id INT REFERENCES animals(id),
     vet_id INT REFERENCES vets(id),
     visited_date date NOT NULL DEFAULT CURRENT_DATE
