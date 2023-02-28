@@ -4,7 +4,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+  - [🚀 Database Diagram](#database-diagram)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -33,6 +33,10 @@
     <li><a href="https://reactjs.org/">PostgreSQL</a></li>
   </ul>
 
+### Database Diagram <a name="database-diagram"></a>
+![drawSQL-vet-clinic-export-2023-02-28](https://user-images.githubusercontent.com/35267447/221862334-c7f56dca-6bfb-45ae-8682-4fd9646212d2.png)
+
+
 
 ### Key Features <a name="key-features"></a>
 
@@ -60,6 +64,9 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
 
 ## 👥 Author <a name="authors"></a>
 
