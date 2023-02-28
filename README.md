@@ -34,6 +34,7 @@
   </ul>
 
 ### Database Diagram <a name="database-diagram"></a>
+![drawSQL-vet-clinic-export-2023-02-28](https://user-images.githubusercontent.com/35267447/221862334-c7f56dca-6bfb-45ae-8682-4fd9646212d2.png)
 
 
 
